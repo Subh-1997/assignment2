@@ -1,0 +1,90 @@
+Max Two
+Write a program to input two numbers(A & B) from user and print the maximum element among A & B in each line.
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+        if(a>b){
+            System.out.println(a);
+        }else{
+            System.out.println(b);
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Max Of Three 4
+Write a program to input three numbers(A, B & C) from user and print the maximum element among A, B & C in each line.
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if(a>b && a>c){
+            System.out.println(a);
+        }else if(b>a && b>c){
+            System.out.println(b);
+        }else{
+            System.out.println(c);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Grade 2
+Write a program to calculate the percentage (according to marks of a student) and grade (according to the percentage of a student). Five numbers(A, B, C, D & E) 
+represent the marks of a student in 5 subjects which are out of 100. Print the percentage and the grade of the student.If percentage >= 90% : Grade A 
+If percentage >= 80% but <90 : Grade B If percentage >= 70% but <80: Grade C If percentage >= 60% but <70: Grade D If percentage >= 40% but <60: Grade E If percentage < 40%: Grade F
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int e = sc.nextInt();
+        float total_marks = a+b+c+d+e;
+        float percentage = (total_marks / (5 * 100)) * 100;
+        
+        if(percentage >= 90 ){
+            System.out.println((int)percentage);
+            System.out.println("A");
+        }else if(percentage >= 80 && percentage<90){
+            System.out.println((int)percentage);
+             System.out.println("B");
+        }else if(percentage >= 70 && percentage<80){
+            System.out.println((int)percentage);
+           System.out.println("C"); 
+        }else if(percentage >= 60 && percentage<70){
+            System.out.println((int)percentage);
+            System.out.println("D");
+        }else if(percentage >= 40 && percentage<60){
+            System.out.println((int)percentage);
+            System.out.println("E");
+        }else if(percentage < 40){
+            System.out.println((int)percentage);
+            System.out.println("F");
+        }
+         
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which Month? 1
+Write a program to input an integer(A) from user and print the Ath month of the year.
+Months list: {January, February, March, April, May, June, July, August, September, October, November, December}
+

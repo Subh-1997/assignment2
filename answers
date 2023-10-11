@@ -158,3 +158,89 @@ public class Solution {
         System.out.println(balance);
     }
 }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Divisible by two number:
+Take an integer A as input. You have to tell whether A is divible by both 5 and 11 or not.
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a%5==0 && a%11==0){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which Triangle? 2:
+Write a program to input from user three numbers(A, B & C) representing side lengths of a triangle
+You have to print if the traingle is "equilateral", "scalene" or "isosceles".
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
+          if (x == y && y == z ){        
+              System.out.println("equilateral");
+          }else if (x == y || y == z || z == x ){
+        System.out.println("isosceles");
+          }
+    else{
+        System.out.println("scalene");
+    }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Categorize Number?
+
+Write a program to input a number(A) from user and print 1 if it is positive, -1 if it is negative, 0 if it's neither positive nor negative.
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        
+        if(x>0){
+            System.out.println(1);
+        }else if(x<0){
+            System.out.println(-1);
+        }else{
+            System.out.println(0);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floor?:
+
+Given two numbers A and B. Print the floor of A/B.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int floor = x/y;
+        System.out.println(floor);
+    }
+}
